@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>House</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon house/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon house/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon house/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon house/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon house/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon house/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon house/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon house/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon house/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon house/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon house/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon house/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon house/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon house/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./assets/favicon house/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="assets/fontawesome-free-6.5.0-web/css/all.css">
+	<link rel="stylesheet" href="assets/signinup.css">
+</head>
+<body>
+	<div class="trangchu">
+	    <h2>Đăng nhập & Đăng kí</h2>
+        <a href="index.html" class="home"> <img src="assets/img/rotate-left.png">Quay lại</a>
+	</div>
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1 >Đăng kí</h1>
+                <div class="social-container">
+                    <a href="https://www.facebook.com/" target="_blank" class="social"><img src="assets/img/facebook.png" alt="facebook"></i></a>
+                    <a href="https://www.google.com/" target="_blank" class="social"><img src="assets/img/google.png" alt="google"></a>
+                    <a href="https://www.linkedin.com/" target="_blank" class="social"><img src="assets/img/linkedin-big-logo.png" alt="likein"></i></a>
+                </div>
+                <span>hoặc đăng kí bằng email</span>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button>Đăng kí</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Đăng nhập</h1>
+                <div class="social-container">
+                    <a href="https://www.facebook.com/" target="_blank" class="social"><img src="assets/img/facebook.png" alt="facebook"></i></a>
+                    <a href="https://www.google.com/" target="_blank" class="social"><img src="assets/img/google.png" alt="google"></a>
+                    <a href="https://www.linkedin.com/" target="_blank" class="social"><img src="assets/img/linkedin-big-logo.png" alt="likein"></i></a>
+                </div>
+                <span>hoặc đăng nhập bằng email</span>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Mật khẩu" />
+                <a href="#">Quên mật khẩu?</a>
+                <button>Đăng nhập</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Chào mừng bạn trở lại!</h1>
+                    <p>Để duy trì kết nối với chúng tôi vui lòng đăng nhập bằng thông tin cá nhân của bạn</p>
+                    <button class="ghost" id="signIn">Đăng nhập</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Chào mừng bạn!</h1>
+                    <p>Nhập thông tin cá nhân của bạn và bắt đầu hành trình với chúng tôi</p>
+                    <button class="ghost" id="signUp">Đăng kí</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+        const signUpButton = document.getElementById('signUp');
+        const signInButton = document.getElementById('signIn');
+        const container = document.getElementById('container');
+
+        signUpButton.addEventListener('click', () => {
+            container.classList.add('right-panel-active');
+        });
+
+        signInButton.addEventListener('click', () => {
+            container.classList.remove('right-panel-active');
+        });
+</script>
+</html>
